@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device_width, initial-scale: 1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <!-- Welcome Modal -->
+  <div id="welcomeModal" class="modal">
+    <div class="modal-content">
+      <h2>Welcome to the 3D Earth App!</h2>
+      <p>Explore the globe by selecting a country from the dropdown menu.</p>
+      <button id="startButton">Get Started</button>
+    </div>
+  </div>
+
+  <div id="controlPanel" class="control-panel">
+    <select id="countrySelect" class="dropdown">
+      <option value="none">Select location...</option>
+      <option value="-122.4194,37.7749">USA (New York)</option>
+      <option value="10.7522,59.9139">Italy (Rome)</option>
+      <option value="139.6917,35.6895">Japan (Tokyo)</option>
+      <option value="2.3522,48.8566">United Kingdom (London)</option>
+    </select>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
